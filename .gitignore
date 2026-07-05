@@ -1,0 +1,36 @@
+# ==========================================
+# Home SOC Lab - Git Ignore
+# ==========================================
+
+# Wazuh certificates & secrets
+*.pem
+*.key
+*.crt
+*.csr
+
+# Passwords & credentials
+wazuh-passwords.txt
+*.env
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Operating System files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Visual Studio Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.env/
