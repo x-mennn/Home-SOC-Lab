@@ -2,96 +2,68 @@
 
 ## Overview
 
-This section documents the complete installation and configuration process for the Home SOC Lab environment. The goal is to build a stable, enterprise-inspired Security Operations Center (SOC) lab using industry-standard tools and best practices.
+This section documents the complete installation and configuration process for the Home SOC Lab environment. The objective is to build an enterprise-inspired Security Operations Center (SOC) lab using industry-standard tools, secure configurations, and reproducible deployment procedures.
 
-The installation process is intentionally divided into multiple phases to ensure every component is deployed, configured, and validated correctly before moving to the next stage.
+Every installation phase is validated before moving to the next component to ensure the environment remains stable, reliable, and easy to troubleshoot.
 
 ---
 
-## Installation Roadmap
+# Installation Roadmap
 
-The Home SOC Lab will be built in the following order:
+The Home SOC Lab is being deployed in the following order:
 
 1. Hypervisor Installation ✅
-2. Virtual Network Configuration
-3. Ubuntu Server Deployment
-4. Windows Endpoint Deployment
-5. Wazuh Server Installation
-6. Elastic Stack & Kibana Configuration
-7. Sysmon Deployment
-8. Winlogbeat Configuration
-9. Agent Enrollment
-10. Log Collection Verification
-11. Dashboard Configuration
-12. Detection Rule Deployment
-13. Attack Simulation
-14. Detection Validation
+2. Virtual Network Configuration ✅
+3. Ubuntu Server Deployment ✅
+4. Windows Endpoint Deployment ⏳
+5. Wazuh Platform Installation ⏳
+6. Sysmon Deployment ⏳
+7. Wazuh Agent Enrollment ⏳
+8. Dashboard Configuration ⏳
+9. Detection Rule Development ⏳
+10. Attack Simulation ⏳
+11. Detection Validation ⏳
+12. Incident Reporting ⏳
 
 ---
 
-## Hypervisor Selection
+# Installation Philosophy
 
-For this project, VMware Workstation Pro has been selected as the virtualization platform.
+Every component in this project follows these principles:
 
-### Why VMware Workstation Pro?
-
-- Enterprise-grade virtualization platform
-- Excellent performance and stability
-- Reliable virtual networking capabilities
-- Snapshot support for safe testing
-- Widely used in enterprise environments
-- Well-suited for cybersecurity and SOC laboratories
+- Official installation sources
+- Step-by-step documentation
+- Verification after installation
+- Reproducible configuration
+- Enterprise best practices
 
 ---
 
-## Installation Philosophy
-
-Every component in this project will be:
-
-- Installed from official sources whenever possible
-- Documented step-by-step
-- Tested before continuing
-- Validated after installation
-- Version documented for reproducibility
-
-This approach follows industry best practices and ensures the environment remains stable, reproducible, and easy to troubleshoot.
-
----
-
-## Current Status
+# Current Status
 
 | Component | Status |
-|----------|--------|
-| Hypervisor | ✅ Completed |
-| Virtual Networking | ⏳ Pending |
-| Ubuntu Server | ⏳ Pending |
+|-----------|--------|
+| VMware Workstation Pro | ✅ Completed |
+| Virtual Networking | ✅ Completed |
+| Ubuntu Server | ✅ Completed |
 | Windows Endpoint | ⏳ Pending |
-| Wazuh Server | ⏳ Pending |
-| Elastic Stack | ⏳ Pending |
-| Kibana | ⏳ Pending |
+| Wazuh Platform | ⏳ Pending |
 | Sysmon | ⏳ Pending |
-| Winlogbeat | ⏳ Pending |
-| Agent Enrollment | ⏳ Pending |
-| Log Verification | ⏳ Pending |
-| Dashboard Configuration | ⏳ Pending |
+| Wazuh Agent | ⏳ Pending |
+| Dashboards | ⏳ Pending |
 | Detection Rules | ⏳ Pending |
 | Attack Simulation | ⏳ Pending |
+| Incident Reports | ⏳ Pending |
 
 ---
 
-## VMware Workstation Pro Installation
+# VMware Workstation Pro Installation
 
-VMware Workstation Pro was selected as the virtualization platform for this project because it provides enterprise-grade performance, stable virtual networking, snapshot support, and is widely used in professional enterprise environments.
-
-The installation was completed successfully and verified before proceeding with virtual machine deployment.
-
----
+VMware Workstation Pro was selected as the virtualization platform because it provides enterprise-grade virtualization, reliable networking, snapshot support, and excellent compatibility with cybersecurity labs.
 
 ## Installation Verification
 
-### VMware Workstation Pro
-
-The VMware Workstation Pro home interface confirms that the hypervisor has been installed successfully and is ready for virtual machine creation.
+### VMware Workstation Installed
 
 ![VMware Workstation Installed](../screenshots/installation/vmware-workstation-installed.png)
 
@@ -99,28 +71,104 @@ The VMware Workstation Pro home interface confirms that the hypervisor has been 
 
 ### Virtual Network Editor
 
-The Virtual Network Editor confirms that VMware networking components were installed successfully. These virtual networks will be configured during the networking phase of the project.
-
-![VMware Virtual Network Editor](../screenshots/installation/vmware-virtual-network-editor.png)
+![Virtual Network Editor](../screenshots/installation/vmware-virtual-network-editor.png)
 
 ---
 
 ### VMware Preferences
 
-The VMware preferences panel was reviewed to verify the default workspace configuration before creating any virtual machines.
-
 ![VMware Preferences](../screenshots/installation/vmware-preferences.png)
 
 ---
 
-## Result
+# Ubuntu Server Deployment
 
-VMware Workstation Pro has been successfully installed and validated.
+Ubuntu Server 26.04 LTS was deployed as the primary Wazuh Manager server for the Home SOC Lab.
 
-The Home SOC Lab environment is now ready for virtual machine deployment and network configuration.
+The server is administered remotely using Visual Studio Code Remote SSH, following enterprise administration practices.
 
 ---
 
-## Notes
+## Server Configuration
 
-This document will be updated throughout the project as each installation phase is completed. Only verified and tested procedures will be documented to maintain accuracy, reproducibility, and enterprise-grade documentation standards.
+| Setting | Value |
+|----------|-------|
+| Operating System | Ubuntu Server 26.04 LTS |
+| Hostname | wazuh-manager |
+| Username | socadmin |
+| vCPU | 4 |
+| Memory | 8 GB |
+| Disk | 100 GB (Thin Provision) |
+| Firmware | UEFI |
+| Network | NAT |
+| Static IP | 192.168.112.10/24 |
+
+---
+
+## Configuration Tasks Completed
+
+- Ubuntu Server installation
+- System update
+- System upgrade
+- Static IP configuration
+- OpenSSH installation
+- VS Code Remote SSH configuration
+- Root filesystem expansion
+- Open VM Tools verification
+
+---
+
+## Installation Verification
+
+### System Identity & Network
+
+Hostname and static IP configuration were verified after deployment.
+
+![System Identity and Network](../screenshots/ubuntu/system-identity-network.png)
+
+---
+
+### Disk Verification
+
+The root filesystem was successfully expanded to utilize the complete virtual disk.
+
+![Disk Verification](../screenshots/ubuntu/disk-verification.png)
+
+---
+
+### Open VM Tools
+
+VMware guest integration services were verified successfully.
+
+![Open VM Tools](../screenshots/ubuntu/open-vm-tools.png)
+
+---
+
+### Remote Administration
+
+Ubuntu Server is managed remotely through Visual Studio Code using the Remote SSH extension.
+
+![Remote SSH](../screenshots/ubuntu/remote-ssh-vscode.png)
+
+---
+
+# Result
+
+The infrastructure foundation of the Home SOC Lab has been completed successfully.
+
+Completed milestones include:
+
+- VMware Workstation Pro
+- Virtual Network Configuration
+- Ubuntu Server Deployment
+- Remote Administration
+- Storage Expansion
+- Open VM Tools Verification
+
+The environment is now ready for Wazuh Platform deployment.
+
+---
+
+# Notes
+
+This document is continuously updated as each installation milestone is completed. Every procedure is validated before documentation to ensure accuracy, reproducibility, and enterprise-grade quality.
