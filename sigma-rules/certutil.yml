@@ -1,0 +1,38 @@
+title: Suspicious Certutil Encode or Decode Activity
+id: 7b6d9e2f-4c3a-4f8b-a912-003certutil
+status: experimental
+description: Detects suspicious use of certutil.exe with encoding or decoding parameters that may indicate file manipulation or defense evasion activity.
+author: Home SOC Lab
+date: 2026/07/16
+
+references:
+    - https://attack.mitre.org/techniques/T1140/
+
+tags:
+    - attack.defense_evasion
+    - attack.t1140
+
+logsource:
+    product: windows
+    category: process_creation
+
+detection:
+    selection_image:
+        Image|endswith:
+            - '\certutil.exe'
+
+    selection_arguments:
+        CommandLine|contains:
+            - ' -encode'
+            - ' -decode'
+            - '/encode'
+            - '/decode'
+
+    condition:
+        selection_image and selection_arguments
+
+falsepositives:
+    - Legitimate certificate management operations
+    - Administrative troubleshooting
+
+level: medium

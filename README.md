@@ -19,6 +19,9 @@ The lab simulates real-world attack scenarios, collects endpoint telemetry, dete
 - Map detections to the MITRE ATT&CK framework
 - Document investigations and detection engineering
 - Build an interview-ready cybersecurity portfolio
+- Create SOC-style incident reports
+- Develop vendor-neutral Sigma detection rules
+- Document threat hunting workflows
 
 ---
 
@@ -31,6 +34,7 @@ The lab simulates real-world attack scenarios, collects endpoint telemetry, dete
 | Endpoint Monitoring | Sysmon |
 | Operating Systems | Ubuntu Server, Windows 10, Kali Linux |
 | Detection Engineering | Wazuh Rules, Sysmon |
+| Detection Format | Sigma Rules |
 | Framework | MITRE ATT&CK |
 | Version Control | Git & GitHub |
 
@@ -42,7 +46,11 @@ Implemented detections include:
 
 - PowerShell Execution
 - Windows Discovery Commands
-- Certutil Execution
+  - whoami
+  - hostname
+  - ipconfig
+  - net user
+- Certutil Encode/Decode Activity
 - PowerShell EncodedCommand
 - Suspicious PowerShell Flags
 - Custom Notepad Detection
@@ -66,6 +74,8 @@ resources/
 screenshots/
 scripts/
 sigma-rules/
+.gitignore
+LICENSE
 README.md
 ```
 
@@ -77,10 +87,13 @@ README.md
 |----------|--------|
 | Infrastructure | ✅ Complete |
 | Detection Engineering | ✅ Complete |
-| Documentation | 🚧 In Progress |
-| Incident Reports | 🚧 In Progress |
-| MITRE Mapping | 🚧 In Progress |
-| Sigma Rules | 🚧 In Progress |
+| Attack Simulations | ✅ Complete |
+| Detection Documentation | ✅ Complete |
+| Incident Reports | ✅ Complete |
+| MITRE ATT&CK Mapping | ✅ Complete |
+| Sigma Rules | ✅ Complete |
+| Scripts | ✅ Complete |
+| Dashboards | ✅ Complete |
 | Final Repository Polish | 🚧 In Progress |
 
 ---
@@ -92,15 +105,37 @@ Through this project I gained hands-on experience with:
 - SIEM deployment and administration
 - Windows endpoint monitoring
 - Sysmon log analysis
-- Threat hunting
+- Threat hunting and alert investigation
 - Detection engineering
 - Custom Wazuh rule development
 - MITRE ATT&CK mapping
 - SOC investigation workflow
-- Security documentation and reporting
+- Security documentation and incident reporting
+- Sigma rule development
+- ATT&CK-based detection analysis
+- SOC alert triage workflow
+
+---
+
+## 🔄 Detection Workflow
+
+The Home SOC Lab follows a complete detection lifecycle:
+
+1. Generate controlled security activity
+2. Collect endpoint telemetry through Sysmon
+3. Forward logs using Wazuh Agent
+4. Trigger and analyze detections
+5. Investigate events through Wazuh Dashboard
+6. Map activity to MITRE ATT&CK
+7. Document findings through incident reports and Sigma rules
 
 ---
 
 ## 📜 License
 
 This project is intended for educational purposes and cybersecurity portfolio development.
+
+## 📬 Contact
+
+- LinkedIn: https://www.linkedin.com/in/vinay-kundu-01602332a/
+- Email: vinaykundu3007@gmail.com

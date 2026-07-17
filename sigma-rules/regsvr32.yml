@@ -1,0 +1,31 @@
+title: Suspicious Regsvr32 Execution
+id: 5e7a9c3d-8b2f-4d6a-c234-005regsvr32
+status: experimental
+description: Detects execution of regsvr32.exe which may be abused by attackers to execute malicious code through a trusted Windows binary.
+author: Home SOC Lab
+date: 2026/07/16
+
+references:
+    - https://attack.mitre.org/techniques/T1218/010/
+
+tags:
+    - attack.defense_evasion
+    - attack.t1218.010
+
+logsource:
+    product: windows
+    category: process_creation
+
+detection:
+    selection:
+        Image|endswith:
+            - '\regsvr32.exe'
+
+    condition:
+        selection
+
+falsepositives:
+    - Legitimate DLL registration activity
+    - Software installation processes
+
+level: medium

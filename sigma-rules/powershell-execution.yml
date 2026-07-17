@@ -1,0 +1,32 @@
+title: Suspicious PowerShell Execution
+id: 9c8f5f6e-7c7b-4b8a-9f8d-001powershell
+status: experimental
+description: Detects PowerShell process execution using Windows process creation telemetry. PowerShell is a legitimate administration tool but is frequently abused by attackers for command execution.
+author: Home SOC Lab
+date: 2026/07/16
+
+references:
+    - https://attack.mitre.org/techniques/T1059/001/
+
+tags:
+    - attack.execution
+    - attack.t1059.001
+
+logsource:
+    product: windows
+    category: process_creation
+
+detection:
+    selection:
+        Image|endswith:
+            - '\powershell.exe'
+            - '\powershell_ise.exe'
+
+    condition:
+        selection
+
+falsepositives:
+    - Legitimate administrative PowerShell usage
+    - System administration scripts
+
+level: medium

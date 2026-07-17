@@ -1,0 +1,40 @@
+title: Windows Discovery Command Execution
+id: 8a4e6c7d-3b2a-4f9e-a821-002discovery
+status: experimental
+description: Detects common Windows discovery commands used to collect information about users, systems, network configuration, and accounts.
+author: Home SOC Lab
+date: 2026/07/16
+
+references:
+    - https://attack.mitre.org/techniques/T1033/
+    - https://attack.mitre.org/techniques/T1082/
+    - https://attack.mitre.org/techniques/T1016/
+    - https://attack.mitre.org/techniques/T1087/
+
+tags:
+    - attack.discovery
+    - attack.t1033
+    - attack.t1082
+    - attack.t1016
+    - attack.t1087
+
+logsource:
+    product: windows
+    category: process_creation
+
+detection:
+    selection:
+        Image|endswith:
+            - '\whoami.exe'
+            - '\hostname.exe'
+            - '\ipconfig.exe'
+            - '\net.exe'
+
+    condition:
+        selection
+
+falsepositives:
+    - Legitimate system administration activity
+    - IT troubleshooting commands
+
+level: medium
