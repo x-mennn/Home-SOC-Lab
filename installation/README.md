@@ -15,15 +15,15 @@ The Home SOC Lab is being deployed in the following order:
 1. Hypervisor Installation ✅
 2. Virtual Network Configuration ✅
 3. Ubuntu Server Deployment ✅
-4. Windows Endpoint Deployment ⏳
-5. Wazuh Platform Installation ⏳
-6. Sysmon Deployment ⏳
-7. Wazuh Agent Enrollment ⏳
-8. Dashboard Configuration ⏳
-9. Detection Rule Development ⏳
-10. Attack Simulation ⏳
-11. Detection Validation ⏳
-12. Incident Reporting ⏳
+4. Windows Endpoint Deployment ✅
+5. Wazuh Platform Installation ✅
+6. Sysmon Deployment ✅
+7. Wazuh Agent Enrollment ✅
+8. Dashboard Configuration ✅
+9. Detection Engineering ✅
+10. Attack Simulation ✅
+11. Detection Validation ✅
+12. Incident Reporting ✅
 
 ---
 
@@ -46,14 +46,14 @@ Every component in this project follows these principles:
 | VMware Workstation Pro | ✅ Completed |
 | Virtual Networking | ✅ Completed |
 | Ubuntu Server | ✅ Completed |
-| Windows Endpoint | ⏳ Pending |
-| Wazuh Platform | ⏳ Pending |
-| Sysmon | ⏳ Pending |
-| Wazuh Agent | ⏳ Pending |
-| Dashboards | ⏳ Pending |
-| Detection Rules | ⏳ Pending |
-| Attack Simulation | ⏳ Pending |
-| Incident Reports | ⏳ Pending |
+| Windows 10 Endpoint | ✅ Completed |
+| Wazuh Platform | ✅ Completed |
+| Sysmon Deployment | ✅ Completed |
+| Wazuh Agent Enrollment | ✅ Completed |
+| Dashboard Configuration | ✅ Completed |
+| Detection Engineering | ✅ Completed |
+| Attack Simulations | ✅ Completed |
+| Incident Reporting | ✅ Completed |
 
 ---
 
@@ -152,23 +152,32 @@ Ubuntu Server is managed remotely through Visual Studio Code using the Remote SS
 
 ---
 
+
 # Result
 
-The infrastructure foundation of the Home SOC Lab has been completed successfully.
+The complete Home SOC Lab was successfully deployed and validated.
 
-Completed milestones include:
+The installation phase included:
 
-- VMware Workstation Pro
-- Virtual Network Configuration
-- Ubuntu Server Deployment
-- Remote Administration
-- Storage Expansion
-- Open VM Tools Verification
+- VMware Workstation Pro setup
+- Virtual network configuration
+- Ubuntu Server deployment
+- Windows 10 endpoint deployment
+- Kali Linux deployment
+- Wazuh platform installation
+- Wazuh Agent enrollment
+- Sysmon deployment
+- Remote administration setup
+- Detection validation
 
-The environment is now ready for Wazuh Platform deployment.
+The environment is fully operational and serves as the foundation for detection engineering, threat hunting, and incident investigation documented throughout this repository.
 
+The completed installation provides the infrastructure required for endpoint monitoring, detection engineering, threat hunting, attack simulation, and incident response throughout the Home SOC Lab.
 ---
+
 
 # Notes
 
-This document is continuously updated as each installation milestone is completed. Every procedure is validated before documentation to ensure accuracy, reproducibility, and enterprise-grade quality.
+All installation procedures documented in this directory were successfully completed and validated during the development of this Home SOC Lab.
+
+The documentation reflects the final deployment used throughout the detection engineering, threat hunting, and incident response exercises included in this repository.
