@@ -10,7 +10,7 @@ The lab simulates real-world attack scenarios, collects endpoint telemetry, dete
 
 ## 🏗️ Lab Architecture
 
-![Home SOC Lab Architecture](./screenshots/architecture/home-soc-architecture.png)
+<img src="./screenshots/architecture/home-soc-architecture.png" width="900" alt="Home SOC Lab Architecture">
 
 
 ---
