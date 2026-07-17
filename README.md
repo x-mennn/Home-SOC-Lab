@@ -8,6 +8,13 @@ The lab simulates real-world attack scenarios, collects endpoint telemetry, dete
 
 ---
 
+## 🏗️ Lab Architecture
+
+![Home SOC Lab Architecture](screenshots/architecture/home-soc-lab-architecture.png)
+
+---
+
+
 ## 🎯 Objectives
 
 - Build a fully functional Home SOC Lab
@@ -37,12 +44,15 @@ The lab simulates real-world attack scenarios, collects endpoint telemetry, dete
 | Detection Format | Sigma Rules |
 | Framework | MITRE ATT&CK |
 | Version Control | Git & GitHub |
+| Endpoint Agent | Wazuh Agent |
+| Attacker VM | Kali Linux |
 
 ---
 
 ## 🔍 Detection Coverage
 
-Implemented detections include:
+The following attack techniques and behaviors were implemented and successfully validated within the Home SOC Lab:
+
 
 - PowerShell Execution
 - Windows Discovery Commands
@@ -56,6 +66,22 @@ Implemented detections include:
 - Custom Notepad Detection
 - Custom MSHTA Detection
 - Custom Regsvr32 Detection
+
+
+---
+
+## ⭐ Repository Highlights
+
+- Enterprise-inspired Home SOC Lab
+- End-to-end detection engineering workflow
+- Wazuh SIEM deployment
+- Sysmon endpoint telemetry
+- MITRE ATT&CK mapping
+- Sigma rule development
+- Incident investigation documentation
+- Threat hunting demonstrations
+- Custom Wazuh detection rules
+- Interview-ready project documentation
 
 ---
 
@@ -94,7 +120,8 @@ README.md
 | Sigma Rules | ✅ Complete |
 | Scripts | ✅ Complete |
 | Dashboards | ✅ Complete |
-| Final Repository Polish | 🚧 In Progress |
+| Final Repository Polish | ✅ Complete |
+| Overall Project | ✅ Complete |
 
 ---
 
@@ -133,9 +160,12 @@ The Home SOC Lab follows a complete detection lifecycle:
 
 ## 📜 License
 
-This project is intended for educational purposes and cybersecurity portfolio development.
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
+---
 
 ## 📬 Contact
 
 - LinkedIn: https://www.linkedin.com/in/vinay-kundu-01602332a/
 - Email: vinaykundu3007@gmail.com
+- Github: https://github.com/x-mennn

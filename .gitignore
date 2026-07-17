@@ -2,35 +2,70 @@
 # Home SOC Lab - Git Ignore
 # ==========================================
 
-# Wazuh certificates & secrets
+# ----------------------------
+# Wazuh Certificates & Secrets
+# ----------------------------
 *.pem
 *.key
 *.crt
 *.csr
+*.p12
+*.pfx
 
-# Passwords & credentials
-wazuh-passwords.txt
+# ----------------------------
+# Credentials & Environment
+# ----------------------------
 *.env
+.env
+.env.*
+wazuh-passwords.txt
 
+# ----------------------------
 # Logs
+# ----------------------------
 *.log
 
-# Temporary files
+# ----------------------------
+# Temporary Files
+# ----------------------------
 *.tmp
 *.temp
+*.bak
+*.swp
 
-# Operating System files
+# ----------------------------
+# Operating System Files
+# ----------------------------
 .DS_Store
 Thumbs.db
 Desktop.ini
 
+# ----------------------------
 # Visual Studio Code
+# ----------------------------
 .vscode/
 
+# ----------------------------
 # Python
+# ----------------------------
 __pycache__/
 *.pyc
 
-# Virtual environments
+# ----------------------------
+# Python Virtual Environments
+# ----------------------------
 venv/
-.env/
+.venv/
+
+# ----------------------------
+# VMware
+# ----------------------------
+*.lck
+*.vmem
+
+# ----------------------------
+# Archive Files
+# ----------------------------
+*.zip
+*.7z
+*.rar
