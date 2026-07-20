@@ -57,6 +57,20 @@ The following validation steps were completed:
 
 ---
 
+### Sysmon Service
+
+![Sysmon Service Running](../screenshots/wazuh/sysmon-service-running.png)
+
+
+### Process Creation Events
+
+![Sysmon Process Creation Event](../screenshots/wazuh/sysmon-process-creation-event.png)
+
+---
+
+
+
+
 # Outcome
 
 Sysmon significantly improved endpoint visibility and enabled the implementation of multiple detections within this project, including:
