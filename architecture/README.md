@@ -10,7 +10,7 @@ This project follows enterprise SOC workflows and is designed to simulate real-w
 
 # Architecture Overview
 
-![Home SOC Lab Architecture](../../screenshots/architecture/home_soc_architecture.png)
+![Home SOC Architecture](../screenshots/architecture/home_soc_architecture.png)
 
 The Home SOC Lab consists of the following components:
 

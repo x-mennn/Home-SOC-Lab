@@ -14,9 +14,6 @@ This document defines the virtual network architecture used in the Home SOC Lab.
 
 The objective is to simulate an enterprise-inspired SOC environment that supports log collection, monitoring, detection engineering, and attack simulations.
 
----
-
-![Home SOC Lab Architecture](../screenshots/architecture/home_soc_architecture.png)
 
 ---
 
