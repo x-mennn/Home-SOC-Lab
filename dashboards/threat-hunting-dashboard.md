@@ -32,6 +32,14 @@ The threat hunting workflow:
 
 ---
 
+## Threat Hunting Dashboard
+
+![Threat Hunting Agent Dashboard](../screenshots/threat-hunting/threat-hunting-agent-dashboard.png)
+
+![Threat Hunting Events](../screenshots/threat-hunting/threat-hunting-events.png)
+
+---
+
 ## Important Event Fields
 
 | Field | Purpose |

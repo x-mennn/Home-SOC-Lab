@@ -8,6 +8,10 @@ The dashboards were used to monitor security alerts, analyze endpoint activity, 
 
 ---
 
+![Wazuh Dashboard Home](../screenshots/wazuh/wazuh-dashboard-home.png)
+
+---
+
 ## Purpose
 
 The purpose of this directory is to demonstrate:

@@ -20,6 +20,13 @@ The Wazuh Dashboard was used for:
 
 ---
 
-## Data Flow
+## Dashboard Overview
 
-The monitoring pipeline:
+![Wazuh Dashboard Login](../screenshots/wazuh/wazuh-dashboard-login.png)
+
+![Wazuh Dashboard Home](../screenshots/wazuh/wazuh-dashboard-home.png)
+
+![Endpoint Dashboard](../screenshots/threat-hunting/wazuh-endpoint-dashboard.png)
+
+---
+
