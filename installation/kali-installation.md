@@ -59,6 +59,14 @@ Deployment was verified by confirming:
 
 ---
 
+### Kali Linux Deployment
+
+![Kali Linux Installation](../screenshots/kali/kali-installation.png)
+
+
+---
+
+
 # Outcome
 
 The Kali Linux virtual machine was successfully deployed and used as the attack simulation system throughout the Home SOC Lab.

@@ -34,7 +34,9 @@ The following configuration tasks were completed after the operating system inst
 - Installed the Wazuh Agent
 - Installed Sysmon using the Sysmon Modular configuration
 
+
 ---
+
 
 # Installation Verification
 
@@ -45,6 +47,27 @@ The following checks were performed after deployment:
 - Network communication confirmed
 - Wazuh Agent successfully connected to the Wazuh Manager
 - Sysmon service running successfully
+
+---
+
+### Windows Installation
+
+![Windows Installation Complete](../screenshots/windows/windows-install-complete.png)
+
+
+### Hostname Verification
+
+![Hostname Configuration](../screenshots/windows/hostname.png)
+
+
+### Network Verification
+
+![Windows Network Configuration](../screenshots/windows/ipconfig-static-ip.png)
+
+
+### Connectivity Test
+
+![Ping Ubuntu Server](../screenshots/windows/ping-ubuntu.png)
 
 ---
 

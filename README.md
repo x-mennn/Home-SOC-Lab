@@ -1,10 +1,10 @@
-# 🛡️ Home SOC Lab
+# 🛡️ Enterprise Home SOC Lab
 
 ## 📌 Overview
 
-This repository documents the design and implementation of a complete Home Security Operations Center (SOC) Lab built using VMware Workstation Pro, Wazuh, Sysmon, Windows 10, Ubuntu Server, and Kali Linux.
+This repository showcases a complete Home Security Operations Center (SOC) Lab built using VMware Workstation Pro, Wazuh, Sysmon, Windows 10, Ubuntu Server, and Kali Linux.
 
-The lab simulates real-world attack scenarios, collects endpoint telemetry, detects malicious activity, performs threat hunting, maps detections to the MITRE ATT&CK framework, and documents investigations following SOC analyst workflows.
+The lab simulates real-world cyber attacks, collects endpoint telemetry, detects malicious activity using Wazuh and Sysmon, performs threat hunting, maps detections to the MITRE ATT&CK framework, and documents security investigations following real SOC analyst workflows.
 
 ---
 
