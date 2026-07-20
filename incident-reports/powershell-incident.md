@@ -44,6 +44,14 @@ The alert was investigated to determine whether the activity represented legitim
 
 ## Investigation
 
+![PowerShell Detection](../screenshots/threat-hunting/powershell-encodedcommand-detection.png)
+
+![Rule 92057 JSON Event](../screenshots/detection-rules/rule-92057-json-event.png)
+
+![Rule 92057 Details](../screenshots/detection-rules/rule-92057-details.png)
+
+---
+
 ### Initial Alert
 
 Wazuh generated an alert after detecting PowerShell execution activity on the monitored Windows endpoint.

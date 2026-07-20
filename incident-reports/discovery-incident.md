@@ -47,6 +47,14 @@ The detected commands were reviewed to determine whether they represented normal
 
 ## Investigation
 
+![Discovery Detection](../screenshots/threat-hunting/threat-hunting-discovery-alerts.png)
+
+![Rule 92031 JSON Event](../screenshots/threat-hunting/rule-92031-json-event.png)
+
+![Rule 92031 Details](../screenshots/threat-hunting/rule-92031-details.png)
+
+---
+
 ### Initial Alert
 
 Wazuh generated alerts after detecting Windows command execution associated with system and account discovery activities.

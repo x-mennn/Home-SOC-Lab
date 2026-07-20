@@ -44,6 +44,10 @@ The purpose of this directory is to explain how each detection works and how a S
 
 ---
 
+![Custom Detection Rule](../screenshots/detection-rules/local-rule-100100.png)
+
+---
+
 ## Purpose
 
 These documents demonstrate an understanding of Wazuh detection logic, Windows telemetry, Sysmon process creation events, and MITRE ATT&CK mapping. Each rule has been validated within the Home SOC Lab using controlled attack simulations.

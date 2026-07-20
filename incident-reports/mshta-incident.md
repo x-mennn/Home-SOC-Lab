@@ -45,6 +45,14 @@ The investigation focused on determining whether mshta.exe was being used for le
 
 ## Investigation
 
+![MSHTA Alert](../screenshots/mshta/03-wazuh-alert.png)
+
+![MSHTA JSON Event](../screenshots/mshta/04-json-event.png)
+
+![MSHTA Rule Details](../screenshots/mshta/05-rule-details.png)
+
+---
+
 ### Initial Alert
 
 Wazuh generated an alert after detecting execution of mshta.exe on the monitored endpoint.

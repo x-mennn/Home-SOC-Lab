@@ -44,6 +44,14 @@ The investigation focused on determining whether certutil was being used for leg
 
 ## Investigation
 
+![Certutil Detection](../screenshots/threat-hunting/threat-hunting-certutil-detection.png)
+
+![Rule 92073 JSON Event](../screenshots/threat-hunting/rule-92073-json-event.png)
+
+![Rule 92073 Details](../screenshots/threat-hunting/rule-92073-details.png)
+
+---
+
 ### Initial Alert
 
 Wazuh generated an alert after detecting certutil execution patterns associated with encoding and decoding activity.

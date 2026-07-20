@@ -45,6 +45,14 @@ The investigation focused on determining whether regsvr32.exe was being used for
 
 ## Investigation
 
+![Regsvr32 Alert](../screenshots/regsvr32/03-wazuh-alert.png)
+
+![Regsvr32 JSON Event](../screenshots/regsvr32/04-json-event.png)
+
+![Regsvr32 Rule Details](../screenshots/regsvr32/05-rule-details.png)
+
+---
+
 ### Initial Alert
 
 Wazuh generated an alert after detecting regsvr32.exe execution on the monitored endpoint.
