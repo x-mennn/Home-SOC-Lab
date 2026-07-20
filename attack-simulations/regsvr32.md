@@ -30,6 +30,13 @@ regsvr32.exe
 
 ---
 
+## Attack Execution
+
+![Regsvr32 Attack Execution](../screenshots/regsvr32/01-regsvr32-command.png)
+
+---
+
+
 ## Expected Detection
 
 The simulation was expected to generate:

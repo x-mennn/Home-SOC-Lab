@@ -30,6 +30,12 @@ mshta.exe vbscript:Execute("CreateObject(""WScript.Shell"").Run ""notepad.exe"":
 
 ---
 
+## Attack Execution
+
+![MSHTA Attack Execution](../screenshots/mshta/01-mshta-attack.png)
+
+---
+
 ## Expected Detection
 
 The simulation was expected to generate:
