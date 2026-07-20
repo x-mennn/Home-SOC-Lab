@@ -20,6 +20,15 @@ type C:\Users\Public\decoded.txt
 The activity simulates a common attacker technique where Certutil is abused to encode or decode files while using a trusted Windows LOLBin.
 
 ---
+## Detection Evidence
+
+![Certutil Detection](../screenshots/threat-hunting/threat-hunting-certutil-detection.png)
+
+![Rule 92073 JSON Event](../screenshots/threat-hunting/rule-92073-json-event.png)
+
+![Rule 92073 Details](../screenshots/threat-hunting/rule-92073-details.png)
+
+---
 
 ## Detection Results
 

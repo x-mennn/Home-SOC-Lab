@@ -21,6 +21,10 @@ Additional documentation will be added as the project progresses.
 
 ---
 
+![Home SOC Architecture](../screenshots/architecture/home_soc_architecture.png)
+
+---
+
 ## Documentation Standards
 
 Every document in this directory follows a consistent structure:

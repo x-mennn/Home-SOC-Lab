@@ -31,6 +31,13 @@ This document describes the deployment and configuration of the Kali Linux attac
 
 ---
 
+## Kali Linux Deployment
+
+![Kali Linux Installation](../screenshots/kali/kali-installation.png)
+
+
+---
+
 ## Installed Utilities
 
 * curl

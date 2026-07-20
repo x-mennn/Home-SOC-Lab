@@ -40,6 +40,16 @@ Discovery activity executed.
 
 ---
 
+## Detection Evidence
+
+![Discovery Alerts](../screenshots/threat-hunting/threat-hunting-discovery-alerts.png)
+
+![Rule 92031 JSON Event](../screenshots/threat-hunting/rule-92031-json-event.png)
+
+![Rule 92031 Details](../screenshots/threat-hunting/rule-92031-details.png)
+
+---
+
 ## Sysmon Investigation
 
 Event Source

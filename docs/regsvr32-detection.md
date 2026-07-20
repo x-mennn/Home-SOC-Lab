@@ -137,16 +137,16 @@ During an investigation an analyst should verify:
 - Additional suspicious LOLBin usage
 
 ---
+## Detection Evidence
 
-## Screenshots
+![Regsvr32 Alert](../screenshots/regsvr32/03-wazuh-alert.png)
 
-- Attack Simulation
-- Sysmon Event ID 1
-- Wazuh Alert
-- JSON Event
-- Rule Details
+![Regsvr32 JSON Event](../screenshots/regsvr32/04-json-event.png)
+
+![Regsvr32 Rule Details](../screenshots/regsvr32/05-rule-details.png)
 
 ---
+
 
 ## Result
 

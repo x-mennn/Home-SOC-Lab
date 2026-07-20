@@ -139,6 +139,16 @@ During an investigation an analyst should verify:
 
 ---
 
+## Detection Evidence
+
+![MSHTA Alert](../screenshots/mshta/03-wazuh-alert.png)
+
+![MSHTA JSON Event](../screenshots/mshta/04-json-event.png)
+
+![MSHTA Rule Details](../screenshots/mshta/05-rule-details.png)
+
+---
+
 ## Screenshots
 
 - Attack Simulation

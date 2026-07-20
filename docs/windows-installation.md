@@ -35,7 +35,12 @@ VMware Tools installed successfully.
 
 ---
 
-## Connectivity Verification
+## Verification
+
+![Windows Installation Complete](../screenshots/windows/windows-install-complete.png)
+
+---
+
 
 ### Windows → Ubuntu
 

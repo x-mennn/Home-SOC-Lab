@@ -87,7 +87,15 @@ The alert was generated after launching PowerShell with suspicious execution fla
 
 ---
 
-## Screenshots
+## Detection Evidence
+
+![Suspicious Flags Detection](../screenshots/threat-hunting/powershell-suspicious-flags.png)
+
+![Rule 92027 JSON Event](../screenshots/detection-rules/rule-92027-json-event.png)
+
+![Rule 92027 Details](../screenshots/detection-rules/rule-92027-details.png)
+
+---
 
 ### Threat Hunting
 

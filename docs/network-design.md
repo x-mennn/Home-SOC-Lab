@@ -16,6 +16,10 @@ The objective is to simulate an enterprise-inspired SOC environment that support
 
 ---
 
+![Home SOC Lab Architecture](../screenshots/architecture/home_soc_architecture.png)
+
+---
+
 # Lab Components
 
 The initial version of the Home SOC Lab consists of two virtual machines.
@@ -67,6 +71,10 @@ Ubuntu Server (Wazuh)
 ↓
 
 Windows Endpoint
+
+---
+
+![Home SOC Architecture](../screenshots/architecture/home_soc_architecture.png)
 
 ---
 

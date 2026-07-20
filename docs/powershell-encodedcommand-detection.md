@@ -92,7 +92,15 @@ The alert was generated after executing a Base64-encoded PowerShell command in t
 
 ---
 
-## Screenshots
+## Detection Evidence
+
+![PowerShell Detection](../screenshots/threat-hunting/powershell-encodedcommand-detection.png)
+
+![Rule 92057 JSON Event](../screenshots/detection-rules/rule-92057-json-event.png)
+
+![Rule 92057 Details](../screenshots/detection-rules/rule-92057-details.png)
+
+---
 
 ### Threat Hunting
 

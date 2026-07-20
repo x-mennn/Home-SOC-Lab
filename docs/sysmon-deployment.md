@@ -69,6 +69,12 @@ Operational
 
 ---
 
+![Sysmon Service Running](../screenshots/wazuh/sysmon-service-running.png)
+
+![Sysmon Process Creation Event](../screenshots/wazuh/sysmon-process-creation-event.png)
+
+---
+
 ## Wazuh Integration
 
 Configured the Wazuh Agent to collect Sysmon Operational logs by adding the following configuration to `ossec.conf`:
